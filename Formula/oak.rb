@@ -5,21 +5,21 @@
 class Oak < Formula
   desc "CLI for Oak, a Git proxy with fine-grained access control"
   homepage "https://oakling.dev"
-  version "0.0.1"
+  version "0.0.2"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/oakling-dev/homebrew-tap/releases/download/v0.0.1/oak_0.0.1_darwin_amd64.tar.gz"
-      sha256 "50549e287838f999f52d3b0931c9c2bc8338a29624cb6ff3e7822f05e6f599ee"
+      url "https://github.com/oakling-dev/homebrew-tap/releases/download/v0.0.2/oak_0.0.2_darwin_amd64.tar.gz"
+      sha256 "ca7995a03413212f6f027db9d509a17e3d44d604fc31e91018fb28c1cc624763"
 
       def install
         bin.install "oak"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/oakling-dev/homebrew-tap/releases/download/v0.0.1/oak_0.0.1_darwin_arm64.tar.gz"
-      sha256 "b5fbe0c6001044955db20b8998bbe00d2c693f681ceec779f02372f2cdb112cc"
+      url "https://github.com/oakling-dev/homebrew-tap/releases/download/v0.0.2/oak_0.0.2_darwin_arm64.tar.gz"
+      sha256 "c7a52b087313b01cef5ea1ffc4c3f93fb53100e03473b3d6efa086ba6fe8ee1f"
 
       def install
         bin.install "oak"
@@ -29,15 +29,15 @@ class Oak < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/oakling-dev/homebrew-tap/releases/download/v0.0.1/oak_0.0.1_linux_amd64.tar.gz"
-      sha256 "3c35db58c8f4e64c8b7e760fdf05bdb47e17579a73a1a17851e9bcab80aa681a"
+      url "https://github.com/oakling-dev/homebrew-tap/releases/download/v0.0.2/oak_0.0.2_linux_amd64.tar.gz"
+      sha256 "c5385447631c99d5338046899679547b6282f73840476282811a2f50acdbd101"
       def install
         bin.install "oak"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/oakling-dev/homebrew-tap/releases/download/v0.0.1/oak_0.0.1_linux_arm64.tar.gz"
-      sha256 "716f2f01e3eb2ceeeea069bb41df00cbb26b0ea71b2b988f663254d309ef9d84"
+      url "https://github.com/oakling-dev/homebrew-tap/releases/download/v0.0.2/oak_0.0.2_linux_arm64.tar.gz"
+      sha256 "8eb1cfb285132e553e226f979625ddf072090d0a508fffb3d0c02f4f320ccbe4"
       def install
         bin.install "oak"
       end
